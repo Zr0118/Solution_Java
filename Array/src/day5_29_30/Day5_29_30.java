@@ -1,6 +1,6 @@
 package day5_29_30;
 // day 5/29/30
-
+// TODO: 5/30/2020 时间复杂度 / 空间复杂度 
 /*
  题目描述: 在一个长度为 n 的数组里的所有数字都在 0 到 n-1 的范围内。
           数组中某些数字是重复的，但不知道有几个数字是重复的，
@@ -32,13 +32,14 @@ public class Day5_29_30 {
         return 0;
     }
 
+    // 这种方法构造了一种数组下标与值之间的练习（前提是数组的值都小于len并且大于0） -- 这代码写的太棒了
     public boolean duplicate(int[] nums, int length, int[] duplication) {
         if (nums == null || length <= 0) // 判断为空两种都写上
             return false;
         for (int i = 0; i < length; i++) {
-            while (nums[i] != i) {
-                if (nums[i] == nums[nums[i]]) {
-                    duplication[0] = nums[i];
+            while (nums[i] != i) { //如果下标与值不相等就进去判断，，如果相等直接进入下一次循环
+                if (nums[i] == nums[nums[i]]) { // 这里比较绕，将数组的下标与数组的值进行了比较
+                    duplication[0] = nums[i]; // 这里开了个口子，最后就输出数组下标为0的值就可以了
                     return true;
                 }
                 swap(nums, i, nums[i]);
