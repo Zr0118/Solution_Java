@@ -37,23 +37,23 @@ public class Day5_31_20 {
     }
 
     // 字符串扩容的方式（扩展在原字符串中）
-    // 这个晚上看看 -- java字符串扩容 用这种方法 github上用的这种，这题考的应该是字符串扩容
+    // 利用stringbuffer进行字符串扩容
     class Solution3 {
         public String replaceSpace(StringBuffer str) {
-            int spacenum = 0;
+            int spacenum = 0; //统计空格数量
             for(int i = 0; i < str.length(); i++){
                 if(str.charAt(i) == ' '){
                     spacenum++;
                 }
             }
-            int oldLength = str.length();
-            int oldIndex = oldLength - 1;
-            int newLength = oldLength + spacenum*2;
-            str.setLength(newLength);
-            int newIndex = newLength - 1;
+            int oldLength = str.length(); // 原字符串的长度
+            int oldIndex = oldLength - 1; // 原字符串下标最大值
+            int newLength = oldLength + spacenum*2; // 新字符串长度 = 原字符串长度+空格长度*2
+            str.setLength(newLength); // 给原字符串扩容到新字符串的长度
+            int newIndex = newLength - 1; // 新字符串下标最大值
             for(; oldIndex >= 0 && oldLength < newLength; oldIndex--){
                 if(str.charAt(oldIndex) == ' '){
-                    str.setCharAt(newIndex--, '0');
+                    str.setCharAt(newIndex--, '0'); // 反序加入字符
                     str.setCharAt(newIndex--, '2');
                     str.setCharAt(newIndex--, '%');
                 }else{

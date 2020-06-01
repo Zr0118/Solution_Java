@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Array/Array.iml" filepath="$PROJECT_DIR$/Array/Array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ListNode/Linked_list.iml" filepath="$PROJECT_DIR$/ListNode/Linked_list.iml" />
       <module fileurl="file://$PROJECT_DIR$/Solution_Java.iml" filepath="$PROJECT_DIR$/Solution_Java.iml" />
       <module fileurl="file://$PROJECT_DIR$/String/String.iml" filepath="$PROJECT_DIR$/String/String.iml" />
     </modules>
