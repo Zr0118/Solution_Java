@@ -58,9 +58,3 @@ public class Day6_1_20 {
 
 
 }
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode(){} // 初始头节点
-    ListNode(int x) { val = x; }
-}

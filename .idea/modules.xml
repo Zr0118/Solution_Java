@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/ListNode/Linked_list.iml" filepath="$PROJECT_DIR$/ListNode/Linked_list.iml" />
       <module fileurl="file://$PROJECT_DIR$/Solution_Java.iml" filepath="$PROJECT_DIR$/Solution_Java.iml" />
       <module fileurl="file://$PROJECT_DIR$/String/String.iml" filepath="$PROJECT_DIR$/String/String.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tree/Tree.iml" filepath="$PROJECT_DIR$/Tree/Tree.iml" />
     </modules>
   </component>
 </project>
