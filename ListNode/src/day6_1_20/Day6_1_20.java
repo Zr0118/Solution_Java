@@ -1,6 +1,8 @@
 package day6_1_20;
 
+import ListNodeUtil.ListNode;
 import java.util.ArrayList;
+
 //总结 链表头插法这道题用到了,还给了一种递归的算法,明天再看看递归算法,今天没想明白,头插法明天也看看
 
 // Day6/1/20 祝自己六一儿童节快乐~

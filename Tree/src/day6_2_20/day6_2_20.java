@@ -25,17 +25,26 @@ package day6_2_20;
     4.则切割后的左子树前序序列为：{2,4,7}，切割后的左子树中序序列为：{4,7,2}；切割后的右子树前序序列为：{3,5,6,8}，切割后的右子树中序序列为：{5,3,8,6}
     5.对子树分别使用同样的方法分解
 * */
-
+import TreeUtil.PrintTree;
+import TreeUtil.TreeNode;
 import java.util.Arrays;
+
 public class day6_2_20 {
-    public TreeNode reConstructBinaryTree(int [] pre,int [] in) {
+    public static void main(String[] args) {
+        int[] pre = {1,2,4,7,3,5,6,8};
+        int[] in = {4,7,2,1,5,3,8,6};
+        TreeNode res = reConstructBinaryTree(pre,in);
+        PrintTree.print(res);
+    }
+
+    public static TreeNode reConstructBinaryTree(int [] pre, int [] in) {
         if (pre.length == 0 || in.length == 0) {
             return null;
         }
-        TreeNode root = new TreeNode(pre[0]);
+        TreeNode root = new TreeNode(pre[0]);// 建立树的根节点，根节点一定就是先序的第一个
         // 在中序中找到前序的根
-        for (int i = 0; i < in.length; i++) {
-            if (in[i] == pre[0]) {
+        for (int i = 0; i < in.length; i++) { // 遍历中序
+            if (in[i] == pre[0]) { // 如果中序中的当前节点等于根节点
                 // 左子树，注意 copyOfRange 函数，左闭右开
                 root.left = reConstructBinaryTree(Arrays.copyOfRange(pre, 1, i + 1), Arrays.copyOfRange(in, 0, i));
                 // 右子树，注意 copyOfRange 函数，左闭右开

@@ -1,8 +1,10 @@
 package day6_1_20;
 
+import ListNodeUtil.ListNode;
+
 import java.util.ArrayList;
 
-// Day6/1/20 祝自己六一儿童节快乐~
+// Day6/2/20 祝自己六一儿童节快乐~
 /* 题目描述:输入一个链表，按链表从尾到头的顺序返回一个ArrayList。*/
 public class Review {
     public static void main(String[] args) {
