@@ -11,7 +11,7 @@ package day5_29_20;
 // TODO: 5/30/2020 时间复杂度 / 空间复杂度
 // 自己的思路：第一天开始写，自己根据题意写出来了，在写内外循环的时候一定要在纸上构建模型，脑子想想不出来
 // 这道题如果都不存在if 与 for中的条件 则返回0
-public class Day5_29_30 {
+public class Day5_29_20 {
     public static void main(String[] args) {
         int[] a = {2,3,1,0,2,5};
         int res = solution(a);
