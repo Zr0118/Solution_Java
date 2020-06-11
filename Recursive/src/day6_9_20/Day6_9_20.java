@@ -15,7 +15,7 @@ public class Day6_9_20 {
         return Fibonacci(n-1) + Fibonacci(n-2);
     }
 
-    // 动态规划 由下而上
+    // 方法二 动态规划 由下而上 数组存储
     static int Fibonacci2(int n) {
         int ans[] = new int[40];
         ans[0] = 0;
@@ -26,7 +26,7 @@ public class Day6_9_20 {
         return ans[n];
     }
 
-    // 优化存储 -- 仅用到了两个变量
+    // 方法三 动态规划 优化存储 -- 仅用到了两个变量
     static public int Fibonacci3(int n) {
         if(n == 0){
             return 0;
