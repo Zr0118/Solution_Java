@@ -20,7 +20,7 @@ public class Review {
     private static void ran_review() {
         // 复习类型
         // TODO: 6/5/2020 参数传递用json 
-        String[] Type ={"Array","ListNode","String","Tree"}; // 参数用json传递
+        String[] Type ={"Array","ListNode","String","Tree","Recursive"}; // 参数用json传递
         int index = ran.nextInt(Type.length); // [0,len)
         System.out.printf("题目类型:%s\n",Type[index]);
 
