@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Array/Array.iml" filepath="$PROJECT_DIR$/Array/Array.iml" />
       <module fileurl="file://$PROJECT_DIR$/Recursive/DP.iml" filepath="$PROJECT_DIR$/Recursive/DP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DynamicProgramming/DynamicProgramming.iml" filepath="$PROJECT_DIR$/DynamicProgramming/DynamicProgramming.iml" />
       <module fileurl="file://$PROJECT_DIR$/ListNode/Linked_list.iml" filepath="$PROJECT_DIR$/ListNode/Linked_list.iml" />
       <module fileurl="file://$PROJECT_DIR$/ReviewUtil/ReviewUtil.iml" filepath="$PROJECT_DIR$/ReviewUtil/ReviewUtil.iml" />
       <module fileurl="file://$PROJECT_DIR$/Solution_Java.iml" filepath="$PROJECT_DIR$/Solution_Java.iml" />
